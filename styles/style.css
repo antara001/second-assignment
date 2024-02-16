@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster+Two&family=Open+Sans:ital@0;1&family=Work+Sans:wght@400;500;700;800&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+margin: 0;
+}
+
+header{
+    background-color:rgba(245, 40, 145, 0.02);
+    padding: 25px 150px;
+   
+    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.6);
+  
+  
+   
+}
+main{
+    max-width: 1440px;
+    margin: 30px 150px;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-title{
+    font-weight: 500px;
+    font-size: 1.8rem;
+    
+    margin-left: 10px;
+}
+.g{
+    color:rgb(243, 5, 136);
+}
+.button{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 10px;
+   
+   
+   
+}
+.button li{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   
+}
+.button img{
+    
+    margin-left: 4px;
+   
+} 
+ nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*.section-title{
+    font-weight: 700;
+    font-size:1.8rem;
+    color: black;
+}*/
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+   margin-right:30px; 
+   align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+} 
+.first-page{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.first-page-image img{
+    width: 70%;
+    margin-left: 220px;
+    
+}
+
+.h3{
+    font-size: 2.8rem;
+    font-weight: 200px;
+    
+}
+.goat{
+    font-size: 3.8rem;
+    font-weight: 700px;
+    color:rgb(212, 11, 212);
+    
+}
+.first-page-content p{
+    font-size:15px;
+    color: rgba(0, 0, 0, 0.823);
+    margin-bottom: 10px;
+   
+    
+}
+.btn-one{
+    background-color:rgb(240, 14, 157);
+    padding: 15px 30px;
+    border: 0;
+    border-radius:30px;
+    text-align: center;
+    color: aliceblue;
+}
+.btn-two{
+    background-color:rgb(0, 199, 253);
+    padding: 15px 30px;
+    border: 0;
+    border-radius:30px;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 5px;
+}
+.second-page{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.second-page .title{
+    font-size: 1.8rem;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+.color{
+    color:rgb(212, 11, 212);
+}
+.description{
+    font-size:13px;
+    font-weight: 400px;
+    line-height: 20px;
+    
+}
+.card{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+.third-page{
+    margin-top: 70px;
+    display: flex;
+    /* justify-content: center;  */
+     /* justify-content: space-between;  */
+    /* text-align: center;   */
+       align-items: center;   
+      
+}
+.third-page .content{
+    margin-left: 20px;
+    text-align: right;
+    margin-bottom: 200px;
+
+    /* justify-content: center; */
+    
+}
+
+
+.third-page .title{
+    font-size: 1.8rem;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+
+.third-page img{
+    width: 65%;
+    margin-left: 230px;
+    
+    
+}
+.small-img{
+    width: 50%;
+    position: relative;
+  bottom: 200px;
+  right: 100px;
+}
+
+
+
+@media screen and (max-width:576px){
+   nav, nav >ul, .first-page, .second-page, .card, .third-page {
+        flex-direction: column;
+    }
+    .btn-two{
+        margin-top: 10px;
+        margin-left: 0px;
+        
+    }
+    .first-page-image img{
+      
+        margin-right:300px;
+        margin-left: 50px;
+        justify-content: center;
+    }
+    .third-page .content{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .third-page .image{
+       align-items: center;
+       margin-left: 0px;
+    }
+    .third-page img{
+        width: 100%;
+        margin-left:7px;
+        margin-top: 0px;
+    }
+    .small-img{
+        position: static;
+     
+       
+    }
+}
