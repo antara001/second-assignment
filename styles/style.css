@@ -19,7 +19,7 @@ header{
 }
 main{
     max-width: 1440px;
-    margin: 30px 150px;
+    margin: 0px 150px;
 }
 .left-header{
     display: flex;
@@ -137,6 +137,7 @@ nav li a{
     text-align: center;
     margin-top: 70px;
     margin-bottom: 50px;
+   
 }
 .second-page .title{
     font-size: 1.8rem;
@@ -164,23 +165,24 @@ nav li a{
     margin-bottom: 15px;
     
 }
-.third-page{
-    margin-top: 70px;
+  .third-page{
+     margin-top: 70px; 
     display: flex;
     /* justify-content: center;  */
      /* justify-content: space-between;  */
     /* text-align: center;   */
-       align-items: center;   
+        align-items: center; 
+        margin-bottom: 0px;  
       
 }
 .third-page .content{
     margin-left: 20px;
     text-align: right;
-    margin-bottom: 200px;
+      margin-bottom: 180px;   
 
-    /* justify-content: center; */
+     /* justify-content: center; */ 
     
-}
+ }
 
 
 .third-page .title{
@@ -188,26 +190,164 @@ nav li a{
     font-weight: 700px;
     margin-bottom: 20px;
 }
-
+.third-page .image{
+  
+    margin-bottom:0px;
+    
+    
+}
 
 .third-page img{
-    width: 65%;
+    width: 60%; 
     margin-left: 230px;
     
     
 }
 .small-img{
-    width: 50%;
-    position: relative;
-  bottom: 200px;
-  right: 100px;
+   width: 45%;
+ position:relative;
+   bottom: 120px; 
+  right: 90px;
+  margin-bottom: 0px;
+
+} 
+.second-main{
+    background-color: rgb(255, 20, 204);
+    margin: 0px;
+}
+.forth-page{
+    display: flex; 
+     /* justify-content: center;  */
+     justify-content: space-between;
+ 
+     align-items: center; 
+    margin-top: 0px;
+    
+   
+   
+
+} 
+ .forth-page-content{
+
+ max-width: 500px;   
+margin-top: 0px;
+ margin-left: 150px; 
+} 
+.columns{
+display: flex;
+justify-content: space-between;
+/* gap: 30px; */
+}
+.column-one{
+   text-align: left;
+}
+.column-two{
+   text-align: right;
+}
+/* .forth-page-image{
+    max-width: 600px;
+    margin-right: 180px;
+} */
+
+
+ .forth-page-image img{
+    width: 100%;
+    
+} 
+.career{
+    font-size: 2rem;
+    font-weight: 400px;
+    margin-bottom: 25px;
+    color: white;
+}
+.forth-page .description{
+    color: white;
+    margin-bottom: 10px;
+}
+.btn-primary{
+    background-color: white;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+  .buttons{
+    margin-top: 50px;
+    
+    
+   
+    /* justify-content: center; */
+    
+    text-align: left;
+} 
+
+
+  .buttons-one{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.buttons-two{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}  
+.button-pannel{
+    display: flex;
+    text-align: left;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+
+     border: 0;
+    border-radius: 30px;
+    background-color:rgba(167, 24, 93, 0.02);
+    box-shadow:0px 4px 30px 0px rgba(232, 210, 210, 0.6);
+   
+    
+    padding:0px 5px;
 }
 
 
-
 @media screen and (max-width:576px){
-   nav, nav >ul, .first-page, .second-page, .card, .third-page {
+   nav, nav >ul, .first-page, .second-page, .card, .third-page,
+   .forth-page 
+   
+   {
         flex-direction: column;
+    }
+    .buttons{
+        margin-left: 80px;
+    }
+    
+    .buttons-one{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+      
+
+    }
+    .buttons-two{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 25px;
+
+    }
+    
+    
+    .forth-page{
+        margin-right: 50px;
+       
+    }
+    .forth-page-image{
+        margin-left: 130px;
     }
     .btn-two{
         margin-top: 10px;
